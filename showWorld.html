@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select World</title>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/image/logo_MultiWorld.png"/>
+
+    <link href="showWorldCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section >
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Select World</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row mb-4 d-flex justify-content-end align-items-center">
+            <span class="titleincard col-1">Sort by: </span>
+            <button type="button" class=" col-1 btn btn-outline-secondary btn-rounded me-3" data-mdb-ripple-color="dark">Name</button>
+            <button type="button" class=" col-1 btn btn-outline-secondary btn-rounded me-3" data-mdb-ripple-color="dark">Date</button>
+        </div>
+        <div id="worldList">
+            <div class="row world-info">
+                <div class="col-lg-1 mb-5 d-flex justify-content-center align-items-center">
+                    <div class="card text-muted" style="max-height: 45%;border-radius: 15px;border: #5588e2 solid 4px;">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h3> 1 </h3>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 mb-5 d-flex justify-content-center align-items-center">
+<!--                    <div class="">-->
+                        <div class="card-body text-center">
+                            <img src="world_image/world_image.png" alt=""
+                                 class="world-img img-fluid">
+                            <br>
+                        </div>
+<!--                    </div>-->
+                </div>
+                <div class="col-lg-8 mb-5">
+                    <div class="card">
+                                <div class="card-body ">
+                                    <h4 class="card-title mb-2">World name</h4>
+                                    <p class="card-text">
+                                        <span class="titleincard">Date created: </span>
+                                        24/12/2001
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center align-items-center">
+                                    <button onclick="createWorld()" class="btn btn-info mx-5">Select</button>
+                                    <button onclick="createWorld()" class="btn btn-success mx-5">Update</button>
+                                    <button onclick="createWorld()" class="btn btn-danger mx-5">Delete</button>
+                                </div>
+<!--                        <div class="card-body">-->
+<!--                            <div class="form-outline mb-4">-->
+<!--                                <input type="text" id="name" class="form-control" name="worldName"/>-->
+<!--                                <label class="form-label" for="name">Name</label>-->
+<!--                            </div>-->
+<!--                            <div class="form-outline mb-4">-->
+<!--                                <input type="text" id="fantasy" class="form-control" name="worldFantasy"/>-->
+<!--                                <label class="form-label" for="fantasy">Number Character</label>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Submit button &ndash;&gt;-->
+<!--                            <div class="text-center">-->
+<!--                                <button onclick="createWorld()" class="btn btn-info">Select</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <hr class="hr mb-5" style="height: 2.5px;">
+    </div>
+    </div>
+</section>
+
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+</body>
+</html>
